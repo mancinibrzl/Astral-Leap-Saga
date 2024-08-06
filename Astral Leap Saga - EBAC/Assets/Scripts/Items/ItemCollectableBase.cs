@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ItemCollectableBase : MonoBehaviour
@@ -26,21 +24,21 @@ public class ItemCollectableBase : MonoBehaviour
     }
 
 
-    protected virtual void Collect() 
+    protected virtual void Collect()
     {
-        if(graphicItem != null) graphicItem.SetActive(false);
+        if (graphicItem != null) graphicItem.SetActive(false);
         Invoke("HideObject", timeToHide);
         OnCollect();
     }
 
-    }
+
 
     private void HideObject()
     {
         gameObject.SetActive(false);
     }
 
-    protected virtual void OnCollect() 
+    protected virtual void OnCollect()
     {
         if (particleSystem != null) particleSystem.Play();
         if (audioSource != null) audioSource.Play();

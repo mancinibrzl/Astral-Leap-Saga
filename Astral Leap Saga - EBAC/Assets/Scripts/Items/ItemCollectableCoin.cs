@@ -10,6 +10,6 @@ public class ItemCollectableCoin : ItemCollectableBase
     {
         base.OnCollect();
         ItemManager.Instance.AddCoins();
-        collider.enabled = false;
+        GetComponent<Collider>().enabled = false;
     }
 }
