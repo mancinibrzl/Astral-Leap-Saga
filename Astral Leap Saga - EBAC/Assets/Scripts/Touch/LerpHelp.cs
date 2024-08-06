@@ -20,6 +20,8 @@ public class LerpHelp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.Lerp(transform.position, target.position, lerpSpeed * Time.deltaTime);
-    }
+        var pos = transform.position;
+        pos.x = Mathf.Lerp(transform.position.x, target.position.x, lerpSpeed * Time.deltaTime);
+        transform.position = pos;
+    }   
 }
