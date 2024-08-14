@@ -1000,7 +1000,11 @@ MonoBehaviour:
   piecesStartNumber: 3
   piecesNumber: 15
   piecesEndNumber: 1
+  levelPieceBasedSetups:
+  - {fileID: 11400000, guid: 4fb1736d710a71a4ea42093c8f3e0d1a, type: 2}
+  - {fileID: 11400000, guid: c839ca0398c757b4aa38ecd014f15af9, type: 2}
   timeBetweenPieces: 0.3
+  _spawnedPieces: []
   _index: 1
 --- !u!4 &621770142
 Transform:
