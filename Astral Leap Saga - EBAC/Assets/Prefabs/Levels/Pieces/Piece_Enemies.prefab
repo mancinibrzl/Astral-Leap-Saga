@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: d5fe72e812fc7a14784a79ee9fb69d99, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -261,14 +261,6 @@ PrefabInstance:
     - target: {fileID: 5852683551634763163, guid: cceec05ecf94d634cae320edea61c613, type: 3}
       propertyPath: m_Name
       value: PFB_Enemy 2 (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 9197772226634342689, guid: cceec05ecf94d634cae320edea61c613, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 7.0776
-      objectReference: {fileID: 0}
-    - target: {fileID: 9197772226634342689, guid: cceec05ecf94d634cae320edea61c613, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.8908
       objectReference: {fileID: 0}
     - target: {fileID: 9197772226634342689, guid: cceec05ecf94d634cae320edea61c613, type: 3}
       propertyPath: m_LocalPosition.x
