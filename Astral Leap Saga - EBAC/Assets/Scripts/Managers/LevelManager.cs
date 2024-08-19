@@ -27,7 +27,7 @@ public class LevelManager : MonoBehaviour
 
     [SerializeField] private int _index;
 
-    private void Awake()
+    private void Start()
     {
         //SpawnNextLevel();
         CreateLevelPieces();
