@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3459778749767872921}
   - component: {fileID: 2493886252867737112}
   - component: {fileID: 6347149632042725204}
+  - component: {fileID: 9210286700728624291}
   m_Layer: 0
   m_Name: PFB_COIN
   m_TagString: Untagged
@@ -72,6 +73,27 @@ MonoBehaviour:
   timeToHide: 0
   graphicItem: {fileID: 7416927005341911407}
   audioSource: {fileID: 0}
+--- !u!114 &9210286700728624291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7416927005341911407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0af9c7c95bcb43b4c963bfea626290de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  compareTag: Player
+  particleSystem: {fileID: 0}
+  timeToHide: 3
+  graphicItem: {fileID: 7416927005341911407}
+  audioSource: {fileID: 0}
+  Collider: {fileID: 0}
+  collect: 0
+  lerp: 5
+  minDistance: 1
 --- !u!1 &8103330312103366268
 GameObject:
   m_ObjectHideFlags: 0

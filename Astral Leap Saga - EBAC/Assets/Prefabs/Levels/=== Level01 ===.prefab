@@ -2633,13 +2633,42 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7416927005341911407, guid: 78072ba1423ce364cab63d4bfac7e454, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7418923753960248520}
   m_SourcePrefab: {fileID: 100100000, guid: 78072ba1423ce364cab63d4bfac7e454, type: 3}
 --- !u!4 &777925878717975408 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3459778749767872921, guid: 78072ba1423ce364cab63d4bfac7e454, type: 3}
   m_PrefabInstance: {fileID: 4235676158245108457}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &6640015413849781126 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7416927005341911407, guid: 78072ba1423ce364cab63d4bfac7e454, type: 3}
+  m_PrefabInstance: {fileID: 4235676158245108457}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7418923753960248520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6640015413849781126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0af9c7c95bcb43b4c963bfea626290de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  compareTag: Player
+  particleSystem: {fileID: 0}
+  timeToHide: 3
+  graphicItem: {fileID: 0}
+  audioSource: {fileID: 0}
+  Collider: {fileID: 0}
+  collect: 0
+  lerp: 5
+  minDistance: 1
 --- !u!1001 &4425126380625158159
 PrefabInstance:
   m_ObjectHideFlags: 0
