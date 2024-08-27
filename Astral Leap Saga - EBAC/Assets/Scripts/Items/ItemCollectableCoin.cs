@@ -16,7 +16,16 @@ public class ItemCollectableCoin : ItemCollectableBase
     {
         CoinAnimatorManager.Instance.RegisterCoin(this);
     }
-
+    
+    protected override void OnCollect()
+    {
+        base.OnCollect();
+        GetComponent<Collider>().enabled = false;
+        collect = true;
+        PlayerController.Instance.Bounce();
+        ItemManager.Instance.AddCoins();
+        GetComponent<Collider>().enabled = false;
+    }
     protected override void Collect()
     {
         OnCollect();
@@ -36,13 +45,4 @@ public class ItemCollectableCoin : ItemCollectableBase
         }
     }
 
-    protected override void OnCollect()
-    {
-        base.OnCollect();
-        GetComponent<Collider>().enabled = false;
-        collect = true;
-        //PlayerController.Instance.Bounce();
-        ItemManager.Instance.AddCoins();
-        GetComponent<Collider>().enabled = false;
-    }
 }
