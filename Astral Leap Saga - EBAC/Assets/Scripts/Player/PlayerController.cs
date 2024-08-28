@@ -39,12 +39,15 @@ public class PlayerController : Singleton<PlayerController>
     public AnimatorManager animatorManager;
     [SerializeField] private BounceHelper _bounceHelper;
 
-
+    private Vector3 initialScale;
 
     private void Start()
     {
         _startPosition = transform.position;
         ResetSpeed();
+        initialScale = transform.localScale;
+        transform.localScale = Vector3.zero;
+        transform.DOScale(initialScale, 2f).SetEase(Ease.OutCubic);
     }
 
     public void Bounce()
