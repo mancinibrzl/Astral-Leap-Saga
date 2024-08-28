@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 8093151611771954016}
   - component: {fileID: 1166394417682549665}
   - component: {fileID: 8899996263636625364}
+  - component: {fileID: 6891299843403810138}
   m_Layer: 0
   m_Name: PFB_PowerUpCoins
   m_TagString: Untagged
@@ -216,3 +217,17 @@ MonoBehaviour:
   duration: 1
   meshRenderer: {fileID: 1166394417682549665}
   startColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &6891299843403810138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5160355247217964146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aac02f3fd28118a4a9af4b8ece87f907, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bounceHeight: 0.5
+  bounceSpeed: 2
